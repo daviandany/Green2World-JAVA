@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main.java {
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -21,6 +21,7 @@ public class Main.java {
         int opcao;
         do {
             System.out.println("\n--- MENU ---");
+            System.out.println("Escolha suas opções na ordem abaixo:");
             System.out.println("1 - Listar Ecopontos");
             System.out.println("2 - Registrar Resíduos Reciclados");
             System.out.println("3 - Ver Quantidade de Resíduos Reciclados");
