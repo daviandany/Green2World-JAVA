@@ -27,6 +27,11 @@ public class Main {
             System.out.println("3 - Ver Quantidade de Resíduos Reciclados");
             System.out.println("0 - Sair");
             System.out.print("Escolha uma opção: ");
+            while (!sc.hasNextInt()) {
+                System.out.println("❌ Entrada inválida! Digite um número.");
+                System.out.print("Escolha uma opção: ");
+                sc.next(); // descarta entrada inválida
+            }
             opcao = sc.nextInt();
 
             switch (opcao) {
