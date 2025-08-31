@@ -13,7 +13,7 @@ public class Main {
 
         // Cadastro do usuário
         System.out.println("🌿 === Green2World === 🌿");
-        System.out.println("  ♻ Let's Save the Planet! ♻");
+        System.out.println("  ♻ Venha salvar o planeta! ♻");
         System.out.print("Digite seu nome: ");
         String nome = sc.nextLine().trim();
         while (nome.isEmpty()) {
