@@ -12,9 +12,14 @@ public class Main {
         ecopontos.add("Ponto de Coleta Bairro Novo - Rua das Árvores, 789");
 
         // Cadastro do usuário
-        System.out.println("=== 🌿 Bem-vindo ao Green2World 🌿 ===");
+        System.out.println("🌿 === Green2World === 🌿");
+        System.out.println("  ♻ Venha salvar o planeta! ♻");
         System.out.print("Digite seu nome: ");
-        String nome = sc.nextLine();
+        String nome = sc.nextLine().trim();
+        while (nome.isEmpty()) {
+            System.out.print("❌ Nome não pode ser vazio! Digite seu nome: ");
+            nome = sc.nextLine().trim();
+        }
 
         int residuosReciclados = 0; // contador de resíduos reciclados
 
@@ -39,6 +44,7 @@ public class Main {
                     System.out.println("\n📍 Ecopontos disponíveis:");
                     for (String ponto : ecopontos) {
                         System.out.println("- " + ponto);
+                
                     }
                     break;
 
@@ -47,6 +53,8 @@ public class Main {
                     int quantidade = sc.nextInt();
                     residuosReciclados += quantidade;
                     System.out.println("✅ Registro concluído! Você reciclou mais " + quantidade + " resíduos.");
+                    System.out.println("✅ Ótimo trabalho, " + nome + "! " + quantidade + 
+                   " resíduos reciclados. Continue assim! 🌍");
                     break;
 
                 case 3:
@@ -54,7 +62,7 @@ public class Main {
                     break;
 
                 case 0:
-                    System.out.println("👋 Obrigado por usar o Green2World!");
+                  System.out.println("👋 Obrigado por usar o Green2World, " + nome + "!");
                     break;
 
                 default:
